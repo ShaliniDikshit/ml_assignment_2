@@ -65,12 +65,12 @@ The following metrics were used for comparison:
 
 | ML Model | Observation |
 |----------|-------------|
-| Logistic Regression | Performs well on linearly separable data with high accuracy. |
-| Decision Tree | Easy to interpret but may overfit. |
-| kNN | Sensitive to choice of k and scaling. |
-| Naive Bayes | Fast and works well for probabilistic classification. |
-| Random Forest | Reduces overfitting and improves generalization. |
-| XGBoost | High performance boosting model with strong predictive power. |
+| Logistic Regression | Achieved the highest overall performance (Accuracy: 0.9825, AUC: 0.9954, F1: 0.9861, MCC: 0.9623). Indicates the dataset is close to linearly separable.|
+| Decision Tree | Showed the lowest accuracy (0.9123) and MCC (0.8174), suggesting possible overfitting and weaker generalization. |
+| kNN | Delivered stable performance (Accuracy: 0.9561, F1: 0.9655), but slightly lower than Logistic Regression and boosting models. |
+| Naive Bayes | Provided moderate performance (Accuracy: 0.9386) but lower MCC compared to ensemble methods, indicating weaker class correlation handling.|
+| Random Forest | Strong ensemble performance (AUC: 0.9937) with improved generalization compared to Decision Tree. |
+| XGBoost | High recall (0.9861) and strong AUC (0.9901), but slightly lower overall metrics than Logistic Regression in this dataset.|
 
 ---
 
