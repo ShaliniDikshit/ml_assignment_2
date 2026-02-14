@@ -26,12 +26,12 @@ The dataset is used to predict whether a tumor is malignant or benign based on m
 
 The following classification models were implemented:
 
-1. Logistic Regression  
-2. Decision Tree Classifier  
-3. K-Nearest Neighbor (kNN)  
-4. Naive Bayes (Gaussian)  
-5. Random Forest (Ensemble)  
-6. XGBoost (Ensemble)  
+1. Logistic Regression : A linear classification model that predicts probability using a sigmoid function. 
+2. Decision Tree Classifier : A tree-based model that splits data based on feature conditions. 
+3. K-Nearest Neighbor (kNN) : A distance-based algorithm that classifies a sample based on its nearest neighbors. 
+4. Naive Bayes (Gaussian) : A probabilistic model based on Bayes’ theorem with independence assumptions. 
+5. Random Forest (Ensemble) : An ensemble method that combines multiple decision trees to improve accuracy. 
+6. XGBoost (Ensemble) : A gradient boosting algorithm that builds trees sequentially to minimize error.
 
 ---
 
@@ -39,12 +39,12 @@ The following classification models were implemented:
 
 The following metrics were used for comparison:
 
-- Accuracy
-- AUC Score
-- Precision
-- Recall
-- F1 Score
-- Matthews Correlation Coefficient (MCC)
+- Accuracy : Percentage of correctly classified samples.
+- AUC Score : Measures model’s ability to distinguish between classes.
+- Precision : Proportion of correct positive predictions.
+- Recall : Ability of the model to correctly identify actual positives.
+- F1 Score : Harmonic mean of precision and recall.
+- Matthews Correlation Coefficient (MCC) : Balanced metric that considers true and false positives and negatives.
 
 ---
 
@@ -88,4 +88,27 @@ Features implemented:
 ## 8. Deployment
 
 The application is deployed using Streamlit Community Cloud.
+The deployed application allows users to upload a dataset, select a classification model, and view evaluation metrics including confusion matrix and classification report.
 
+
+## 9. How to run locally
+
+**1. Clone the repository:**
+
+git clone https://github.com/ShaliniDikshit/ml_assignment_2.git
+
+cd ml_assignment_2
+
+**2. Create and activate a virtual environment:**
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+**3. Install dependencies:**
+
+pip install -r requirements.txt
+
+**4. Run the Streamlit application:**
+
+streamlit run app.py
