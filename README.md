@@ -112,3 +112,11 @@ pip install -r requirements.txt
 **4. Run the Streamlit application:**
 
 streamlit run app.py
+
+
+## 10. Conclusion
+The comparative evaluation of six classification models reveals that Logistic Regression outperforms the other models across nearly all performance metrics. With the highest accuracy (0.9825), AUC (0.9954), and MCC (0.9623), it demonstrates excellent discriminative power and balanced classification ability.
+
+While ensemble models such as XGBoost and Random Forest showed strong recall and competitive AUC values, their overall performance remained marginally lower. Additionally, Logistic Regression offers better interpretability and lower model complexity, making it a more reliable and efficient choice for this dataset.
+
+Hence, Logistic Regression is concluded to be the optimal model for the Breast Cancer classification problem in this study.
