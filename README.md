@@ -1,5 +1,7 @@
 # Machine Learning Classification Model Comparison
 
+Live Streamlit App:https://ml-assignment-2-shalini.streamlit.app/
+
 ## 1. Problem Statement
 The objective of this project is to implement and compare multiple machine learning classification models on a selected dataset.  
 The goal is to evaluate the performance of different models using various evaluation metrics and deploy the solution as an interactive Streamlit web application.
@@ -48,12 +50,12 @@ The following metrics were used for comparison:
 
 | ML Model | Accuracy | AUC | Precision | Recall | F1 | MCC |
 |----------|----------|-----|-----------|--------|----|-----|
-| Logistic Regression |  |  |  |  |  |  |
-| Decision Tree |  |  |  |  |  |  |
-| kNN |  |  |  |  |  |  |
-| Naive Bayes |  |  |  |  |  |  |
-| Random Forest |  |  |  |  |  |  |
-| XGBoost |  |  |  |  |  |  |
+| Logistic Regression | 0.9825 | 0.9954 | 0.9861 |0.9861  | 0.9861 | 0.9623 |
+| Decision Tree | 0.9123 | 0.9157 | 0.9559 | 0.9028 | 0.9286 |  0.8174|
+| kNN | 0.9561 | 0.9788 | 0.9589 | 0.9722 | 0.9655 | 0.9054 |
+| Naive Bayes | 0.9386 | 0.9878 | 0.9452 | 0.9583 | 0.9517 | 0.8676 |
+| Random Forest | 0.9561 | 0.9937 | 0.9589 | 0.9722 | 0.9655 | 0.9054 |
+| XGBoost | 0.9561 | 0.9901 | 0.9467 | 0.9861 | 0.9660 | 0.9058 |
 
 ---
 
