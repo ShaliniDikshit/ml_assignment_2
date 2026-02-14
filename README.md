@@ -1,6 +1,7 @@
 # Machine Learning Classification Model Comparison
 
 Live Streamlit App:https://ml-assignment-2-shalini.streamlit.app/
+GitHub Repository: https://github.com/ShaliniDikshit/ml_assignment_2
 
 ## 1. Problem Statement
 The objective of this project is to implement and compare multiple machine learning classification models on a selected dataset.  
