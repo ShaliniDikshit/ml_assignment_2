@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
 from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -28,7 +29,21 @@ from sklearn.metrics import (
 
 # Page Title
 st.title("Machine Learning Classification Model Comparison")
-st.write("Dataset: Breast Cancer Wisconsin Diagnostic Dataset")
+st.subheader("Upload Test Dataset (CSV)")
+
+uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
+
+if uploaded_file is not None:
+    data = pd.read_csv(uploaded_file)
+    st.write("Dataset Preview:")
+    st.dataframe(data)
+
+    X = data.iloc[:, :-1]
+    y = data.iloc[:, -1]
+
+else:
+    st.write("Using Default Dataset: Breast Cancer Wisconsin")
+
 
 # Load Dataset
 data = load_breast_cancer()
@@ -110,4 +125,10 @@ st.pyplot(fig)
 
 # Classification Report
 st.subheader("Classification Report")
-st.text(classification_report(y_test, y_pred))
+report = classification_report(y_test, y_pred, output_dict=True)
+report_df = pd.DataFrame(report).transpose()
+
+# Round values for clean display
+report_df = report_df.round(3)
+
+st.dataframe(report_df)
