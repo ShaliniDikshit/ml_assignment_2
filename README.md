@@ -13,10 +13,10 @@ The goal is to evaluate the performance of different models using various evalua
 ## 2. Dataset Description
 Dataset used: Breast Cancer Wisconsin Diagnostic Dataset
 
-- Type: Binary Classification
-- Instances: 569
-- Features: 30 numerical features
-- Target: Malignant (1) or Benign (0)
+- **Type:** Binary Classification
+- **Instances**: 569
+- **Features**: 30 numerical features
+- **Target**: Malignant (1) or Benign (0)
 
 The dataset is used to predict whether a tumor is malignant or benign based on medical measurements.
 
@@ -26,12 +26,12 @@ The dataset is used to predict whether a tumor is malignant or benign based on m
 
 The following classification models were implemented:
 
-1. Logistic Regression : A linear classification model that predicts probability using a sigmoid function. 
-2. Decision Tree Classifier : A tree-based model that splits data based on feature conditions. 
-3. K-Nearest Neighbor (kNN) : A distance-based algorithm that classifies a sample based on its nearest neighbors. 
-4. Naive Bayes (Gaussian) : A probabilistic model based on Bayes’ theorem with independence assumptions. 
-5. Random Forest (Ensemble) : An ensemble method that combines multiple decision trees to improve accuracy. 
-6. XGBoost (Ensemble) : A gradient boosting algorithm that builds trees sequentially to minimize error.
+1. **Logistic Regression**: A linear classification model that predicts probability using a sigmoid function. 
+2. **Decision Tree Classifier**: A tree-based model that splits data based on feature conditions. 
+3. **K-Nearest Neighbor (kNN)** : A distance-based algorithm that classifies a sample based on its nearest neighbors. 
+4. **Naive Bayes (Gaussian)** : A probabilistic model based on Bayes’ theorem with independence assumptions. 
+5. **Random Forest (Ensemble)**: An ensemble method that combines multiple decision trees to improve accuracy. 
+6. **XGBoost (Ensemble)** : A gradient boosting algorithm that builds trees sequentially to minimize error.
 
 ---
 
@@ -39,12 +39,12 @@ The following classification models were implemented:
 
 The following metrics were used for comparison:
 
-- Accuracy : Percentage of correctly classified samples.
-- AUC Score : Measures model’s ability to distinguish between classes.
-- Precision : Proportion of correct positive predictions.
-- Recall : Ability of the model to correctly identify actual positives.
-- F1 Score : Harmonic mean of precision and recall.
-- Matthews Correlation Coefficient (MCC) : Balanced metric that considers true and false positives and negatives.
+- **Accuracy** : Percentage of correctly classified samples.
+- **AUC Score** : Measures model’s ability to distinguish between classes.
+- **Precision**: Proportion of correct positive predictions.
+- **Recall** : Ability of the model to correctly identify actual positives.
+- **F1 Score** : Harmonic mean of precision and recall.
+- **Matthews Correlation Coefficient (MCC)** : Balanced metric that considers true and false positives and negatives.
 
 ---
 
@@ -52,12 +52,12 @@ The following metrics were used for comparison:
 
 | ML Model | Accuracy | AUC | Precision | Recall | F1 | MCC |
 |----------|----------|-----|-----------|--------|----|-----|
-| Logistic Regression | 0.9825 | 0.9954 | 0.9861 |0.9861  | 0.9861 | 0.9623 |
-| Decision Tree | 0.9123 | 0.9157 | 0.9559 | 0.9028 | 0.9286 |  0.8174|
-| kNN | 0.9561 | 0.9788 | 0.9589 | 0.9722 | 0.9655 | 0.9054 |
-| Naive Bayes | 0.9386 | 0.9878 | 0.9452 | 0.9583 | 0.9517 | 0.8676 |
-| Random Forest | 0.9561 | 0.9937 | 0.9589 | 0.9722 | 0.9655 | 0.9054 |
-| XGBoost | 0.9561 | 0.9901 | 0.9467 | 0.9861 | 0.9660 | 0.9058 |
+| **Logistic Regression** | 0.9825 | 0.9954 | 0.9861 |0.9861  | 0.9861 | 0.9623 |
+| **Decision Tree**| 0.9123 | 0.9157 | 0.9559 | 0.9028 | 0.9286 |  0.8174|
+| **kNN** | 0.9561 | 0.9788 | 0.9589 | 0.9722 | 0.9655 | 0.9054 |
+| **Naive Bayes** | 0.9386 | 0.9878 | 0.9452 | 0.9583 | 0.9517 | 0.8676 |
+| **Random Forest** | 0.9561 | 0.9937 | 0.9589 | 0.9722 | 0.9655 | 0.9054 |
+| **XGBoost** | 0.9561 | 0.9901 | 0.9467 | 0.9861 | 0.9660 | 0.9058 |
 
 ---
 
@@ -65,12 +65,12 @@ The following metrics were used for comparison:
 
 | ML Model | Observation |
 |----------|-------------|
-| Logistic Regression | Achieved the highest overall performance (Accuracy: 0.9825, AUC: 0.9954, F1: 0.9861, MCC: 0.9623). Indicates the dataset is close to linearly separable.|
-| Decision Tree | Showed the lowest accuracy (0.9123) and MCC (0.8174), suggesting possible overfitting and weaker generalization. |
-| kNN | Delivered stable performance (Accuracy: 0.9561, F1: 0.9655), but slightly lower than Logistic Regression and boosting models. |
-| Naive Bayes | Provided moderate performance (Accuracy: 0.9386) but lower MCC compared to ensemble methods, indicating weaker class correlation handling.|
-| Random Forest | Strong ensemble performance (AUC: 0.9937) with improved generalization compared to Decision Tree. |
-| XGBoost | High recall (0.9861) and strong AUC (0.9901), but slightly lower overall metrics than Logistic Regression in this dataset.|
+| **Logistic Regression** | Achieved the highest overall performance (Accuracy: 0.9825, AUC: 0.9954, F1: 0.9861, MCC: 0.9623). Indicates the dataset is close to linearly separable.|
+| **Decision Tree** | Showed the lowest accuracy (0.9123) and MCC (0.8174), suggesting possible overfitting and weaker generalization. |
+| **kNN** | Delivered stable performance (Accuracy: 0.9561, F1: 0.9655), but slightly lower than Logistic Regression and boosting models. |
+| **Naive Bayes** | Provided moderate performance (Accuracy: 0.9386) but lower MCC compared to ensemble methods, indicating weaker class correlation handling.|
+| **Random Forest** | Strong ensemble performance (AUC: 0.9937) with improved generalization compared to Decision Tree. |
+| **XGBoost** | High recall (0.9861) and strong AUC (0.9901), but slightly lower overall metrics than Logistic Regression in this dataset.|
 
 ---
 
@@ -119,4 +119,4 @@ The comparative evaluation of six classification models reveals that Logistic Re
 
 While ensemble models such as XGBoost and Random Forest showed strong recall and competitive AUC values, their overall performance remained marginally lower. Additionally, Logistic Regression offers better interpretability and lower model complexity, making it a more reliable and efficient choice for this dataset.
 
-Hence, Logistic Regression is concluded to be the optimal model for the Breast Cancer classification problem in this study.
+_**Hence, Logistic Regression is concluded to be the optimal model for the Breast Cancer classification problem in this study.**_
